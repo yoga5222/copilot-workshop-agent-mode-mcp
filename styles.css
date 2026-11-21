@@ -15,6 +15,7 @@
   --accent-hover: #1a7f37;
   --danger: #cf222e;
   --danger-soft: rgba(207, 34, 46, 0.1);
+  --button-danger-text: #ffffff;
   --shadow: rgba(0, 0, 0, 0.08);
 }
 
@@ -239,9 +240,27 @@ h1 {
   margin-top: 20px;
   padding-top: 16px;
   border-top: 1px solid var(--border);
-  text-align: center;
   font-size: 0.9rem;
   color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.btn-clear-completed {
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  color: var(--danger);
+  background: var(--danger-soft);
+  border: 1px solid var(--danger);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-clear-completed:hover {
+  color: var(--button-danger-text);
+  background: var(--danger);
 }
 
 /* ---------- 無障礙:僅供螢幕閱讀器 ---------- */
